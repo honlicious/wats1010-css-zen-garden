@@ -9,186 +9,200 @@
 
 
 /* basic elements */
-html {
-	margin: 0;
-	padding: 0;
-	}
-body { 
-	font: 75% georgia, sans-serif;
-	line-height: 1.88889;
-	color: #555753; 
-	background: #fff url(blossoms.jpg) no-repeat bottom right; 
-	margin: 0; 
-	padding: 0;
-	}
-p { 
-	margin-top: 0; 
-	text-align: justify;
-	}
-h3 { 
-	font: italic normal 1.4em georgia, sans-serif;
-	letter-spacing: 1px; 
-	margin-bottom: 0; 
-	color: #7D775C;
-	}
-a:link { 
-	font-weight: bold; 
-	text-decoration: none; 
-	color: #B7A5DF;
-	}
-a:visited { 
-	font-weight: bold; 
-	text-decoration: none; 
-	color: #D4CDDC;
-	}
-a:hover, a:focus, a:active { 
-	text-decoration: underline; 
-	color: #9685BA;
-	}
-abbr {
-	border-bottom: none;
-	}
+body {
+    width: 1200px;
+    margin: 0 auto;
+    color: #0f2a36;
+    font-family: 'Open Sans', Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.25em;
+    border: 3px solid black;
+}
+header h1 {
+    font-size: 60px;
+    margin-bottom: 0;
+    margin-left: 20px;
+    margin-top: 0px;
+    padding-top: 20px;
+    font-family: 'Adelle W01 Bold', 'Arvo', Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+    font-weight: 500;
+    color: #26547B;
+}
+header h2 {
+    margin-top: 20px;
+    position: relative;
+    left: 100px;
+    font-size: 20px;
+    color: #3FA944;
+}
+#zen-supporting {
+    background-color: #EFDBDD;
+}
+#zen-supporting h3 {
+	text-align: center;
+    font-size: 40px;
+    color: #26547B;
+}
+.intro {
+/*	border: solid 2px black;*/
+    background-image: url('puppy_chasing_ball.jpg');
+    background-size: 1200px 500px;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-color: aliceblue;
+}
+.summary {
+	margin-top: 30px;
+    margin-left: 10px;
+    color: #3FA944;
+}
+.summary p {
+	margin: 0 0 0 50px;
+    max-width: 300px;
+    position: relative;
+}
+.participation {
+	clear: left;
+    padding: 10px 350px 10px 10px;
+    background-color: aliceblue;
+    position: relative;
+}
+@-moz-keyframes spin { 100% { -moz-transform: rotate(-360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(-360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(-360deg); transform:rotate(-360deg); } }
 
-
-/* specific divs */
-.page-wrapper { 
-	background: url(zen-bg.jpg) no-repeat top left; 
-	padding: 0 175px 0 110px;  
-	margin: 0; 
-	position: relative;
-	}
-
-.intro { 
-	min-width: 470px;
-	width: 100%;
-	}
-
-header h1 { 
-	background: transparent url(h1.gif) no-repeat top left;
-	margin-top: 10px;
-	display: block;
-	width: 219px;
-	height: 87px;
-	float: left;
-
-	text-indent: 100%;
-	white-space: nowrap;
-	overflow: hidden;
-	}
-header h2 { 
-	background: transparent url(h2.gif) no-repeat top left; 
-	margin-top: 58px; 
-	margin-bottom: 40px; 
-	width: 200px; 
-	height: 18px; 
-	float: right;
-
-	text-indent: 100%;
-	white-space: nowrap;
-	overflow: hidden;
-	}
-header {
-	padding-top: 20px;
-	height: 87px;
+.participation::before{
+    content: '';
+    width: 250px;
+    height:250px;
+    background-image: url('tennisball.jpg');
+    background-repeat: no-repeat; 
+    background-size: 250px;
+    position: absolute;
+    right: 44px;
+    top: 77px;
+    animation:spin 4s linear infinite;
+}
+.explanation {
+	padding: 50px;
+	width: 500px;
+    float: left;
+    margin-left: 600px;
+    margin-top: -450px;
+}
+.explanation h3 {
+    padding-bottom: 21px;
+}
+.preamble {
+    width: 500px;
+    position: relative;
+    padding: 50px;
+    float: left;
+    margin-top: 260px;
+}
+.preamble h3 {
+    text-align: center;
+    font-size: 40px;
+    color: #26547B;
+    line-height: 1em;
+}
+/*.main {
+	border: solid 2px red;
+}*/
+.benefits {
+    padding: 10px 10px 20px 400px;
+    background-image: url('pugjump.png');
+    background-repeat: no-repeat; 
+    background-size: 200px;
+    background-position-x: 10%;
+    background-color: aliceblue;
+}
+.requirements {
+	padding-bottom: 50px;
+}
+.requirements p {
+    float: left;
+    margin-top: 0;
+    width: 500px;
+}
+.requirements p:nth-child(-n+3) {
+    clear: left;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+.requirements p:nth-child(4) {
+    position: relative;
+    right: 0;
+    margin-left: 600px;
+    margin-top: -291px;
+}
+.requirements p:nth-child(5) {
+    position: relative;
+    right: 0;
+    margin-left: 600px;
+    margin-top: -178px;
+}
+.requirements p:nth-child(6) {
+    width:1200px;
+    text-align: center;
 }
 
-.summary {
-	clear: both; 
-	margin: 20px 20px 20px 10px; 
-	width: 160px; 
-	float: left;
-	}
-.summary p {
-	font: italic 1.1em/2.2 georgia; 
+footer {
+	clear: both;
 	text-align: center;
-	}
-
-.preamble {
-	clear: right; 
-	padding: 0px 10px 0 10px;
-	}
-.supporting {	
-	padding-left: 10px; 
-	margin-bottom: 40px;
-	}
-
-footer { 
-	text-align: center; 
-	}
-footer a:link, footer a:visited { 
-	margin-right: 20px; 
-	}
-
+    background-color: #00D0FF;
+}
+footer a {
+	padding: 10px 10px 8px 10px;
+}
+footer a:focus, footer a:hover {
+    background-color: white;
+}
 .sidebar {
-	margin-left: 600px; 
-	position: absolute; 
-	top: 0; 
-	right: 0;
-	}
-.sidebar .wrapper { 
-	font: 10px verdana, sans-serif; 
-	background: transparent url(paper-bg.jpg) top left repeat-y; 
-	padding: 10px; 
-	margin-top: 150px; 
-	width: 130px; 
-	}
-.sidebar h3.select { 
-	background: transparent url(h3.gif) no-repeat top left; 
-	margin: 10px 0 5px 0; 
-	width: 97px; 
-	height: 16px; 
-
-	text-indent: 100%;
-	white-space: nowrap;
-	overflow: hidden;
-	}
-.sidebar h3.archives { 
-	background: transparent url(h5.gif) no-repeat top left; 
-	margin: 25px 0 5px 0; 
-	width:57px; 
-	height: 14px; 
-
-	text-indent: 100%;
-	white-space: nowrap;
-	overflow: hidden;
-	}
-.sidebar h3.resources { 
-	background: transparent url(h6.gif) no-repeat top left; 
-	margin: 25px 0 5px 0; 
-	width:63px; 
-	height: 10px; 
-
-	text-indent: 100%;
-	white-space: nowrap;
-	overflow: hidden;
-	}
-
-
-.sidebar ul {
-	margin: 0;
-	padding: 0;
-	}
-.sidebar li {
-	line-height: 1.3em; 
-	background: transparent url(cr1.gif) no-repeat top center; 
-	display: block; 
-	padding-top: 5px; 
-	margin-bottom: 5px;
-	list-style-type: none;
-	}
-.sidebar li a:link {
-	color: #988F5E;
-	}
-.sidebar li a:visited {
-	color: #B3AE94;
-	}
-
-
-.extra1 {
-	background: transparent url(cr2.gif) top left no-repeat; 
-	position: absolute; 
-	top: 40px; 
-	right: 0; 
-	width: 148px; 
-	height: 110px;
-	}
+    position: fixed;
+    top: 0;
+    right: 1em;
+}
+.wrapper nav, .wrapper > div > ul {
+    border-left: 1px solid green;
+    border-right: 1px solid green;
+}
+.wrapper div {   
+    margin: 0;
+    padding: 0;
+    float: left;
+    position: relative;
+}
+.wrapper h3 {
+    text-align: center;
+    text-decoration: none;
+    margin: 0;
+    vertical-align: middle;
+    padding: 10px 5px 2px;
+    width: 156px;
+    display: block;
+    color: #EA2D4D;
+    background-color: #A6DDE0;
+    border: solid 1px #480ED6;
+}
+.wrapper div li {
+    list-style: none;
+    text-align: center;
+    padding:10px 5px 2px;
+    width: 155px;
+    border-bottom: solid 1px green;
+}
+.wrapper div ul {
+    padding: 0;
+    margin-top: 0;
+    background-color: #00D0FF;
+}
+.wrapper div:not(:hover) ul {
+    display: none;
+}
+.wrapper ul > li a {
+    color: #fff;
+}
+.wrapper ul > li a:hover {
+    color: #333;
+}
